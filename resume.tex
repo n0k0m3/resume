@@ -19,6 +19,14 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
+
+% Version config
+\usepackage{versions}
+\includeversion{SWE}
+% \excludeversion{SWE}
+\includeversion{DS}
+% \excludeversion{DS}
+
 \usepackage{multicol}
 \usepackage{hyperref}
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
@@ -35,142 +43,32 @@
 %	MISSION STATEMENT/CAREER OBJECTIVE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Career Objective}
-    Highly motivated, exceptionally fast learner Graduate student in Operations Research looking to advance into a career in Data Sciences/Analytics.
-    % Experienced with SIMD optimization with NumPy, distributed computing with Spark/PySpark, various Deep Learning platforms (Tensorflow, Pytorch, Microsoft ONNX) and ML libraries (RapidsAI, Scikit-learn, ).
-    Aiming to utilize my academic and internship experience to breach the wall between theoretical mathematics (especially in Topological Data Analysis) and real-world applications.\\
-    Currently interested in learning about topological dimensionality reduction for data processing.
-\end{rSection}
-
+\input{1-Career Objective}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-% \begin{rSection}{Objective}
-% To broaden skills in software development and %establish a basis for future employment in Japan.
-% \end{rSection}
-
-\begin{rSection}{Education}
-
-    {\bf Florida Institute of Technology, Melbourne FL}
-    \\ Ph.D Operations Research  GPA: 4.00 \hfill {\em Aug 2020 - Present}
-    \\ M.S. Operations Research  GPA: 4.00 \hfill {\em Aug 2018 - May 2020}
-    \\ B.S. Biochemistry (Biology Emphasis)    GPA: 3.43\hfill {\em Aug 2014 - May 2018}
-\end{rSection}
-
-%{\bf Courses}
-%\\Algorithms \& Data Structures, Parallel Processing, Database Systems, Discrete Mathematics, Abstract Algebra, Combinatorics \& Graph Theory, Formal Languages \& Automata Theory, Java (3 Semesters), C++ (2 Semesters), FORTRAN, Numerical Analysis, Optimization, Linear Algebra.
-
+\input{2-Education}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Experience}
+\input{3-Experience}
 
-    \begin{rSubsection}{Florida Institute of Technology - Dept. of Mathematical Sciences}{\em August 2018 - Present}{Graduate Student/Teaching Assistant}{}
-        \item Research on Double Stochastic Processes (Branching Process with random offsprings)
-        \item Teach and grade exams for Calculus I, II, III
-        \item Tutor and grade exams for Probability \& Statistics, Neural Networks.
-        \item Aid students studying Stochastic Modeling, Differential Equations
-    \end{rSubsection}
-
-    \begin{rSubsection}{Truveta}{\em May 2021 - August 2021}{Graduate Intern}{}
-        \item Developed a data quality measurement toolkit, with \textbf{Databrick} and \textbf{PySpark}, to measure data quality of Truveta Health Data Model (THDM), garnering trusts from health providers.
-        \item Designed a Monte Carlo sampling model to generate synthetic patient data for stress-testing.
-        \item Established the foundation approach for (new) Synthetic Patient Health Data, involving probabilistic theory of document retrieval, representation (feature) learning and deep learning.
-        % The model will not only help with generation of Synthetic Health Data, but also be implemented in filling missing patient data, predict doctor-patient encounter from health history, etc.
-        \item Developed an annotation recommender system for THDM medical concept normalization.
-        \item Assisted team members and other co-workers on various Projects and Collaborative efforts.
-    \end{rSubsection}
-
-    \begin{rSubsection}{IBM Skill Academy}{\em May 2021 - June 2021}{IBM Data Science Practitioner - Instructor}{}
-        \item Earned Certification for Instructor role for IBM Data Science Practitioner
-        \item Audited IBM Data Science learning material and proposed changes that was added to the material.
-        \item Created a curriculum for teaching IBM Data Science course at Florida Institute of Technology
-    \end{rSubsection}
-
-
-\end{rSection}
-
-\begin{rSection}{Projects}
-    \begin{rSubsection}{Classification of Extended MNIST Handwritten Digits and Letters Dataset}{}{\href{https://colab.research.google.com/drive/18z161k3diYO6sNVBfiKH8uGqbrekxMPN?usp=sharing}{Project link}}{}
-        \item EMNIST dataset is MNIST (handwritten digit) dataset with handwritten characters
-        \item Applied Principal Component Analysis (PCA) and Persistent Homology (TDA) to reduce the dimension of dataset. Reduced feature size from 784 (28x28) to 35 while retaining 99\% variance
-        \item Utilized libraries \textbf{giotto-ai} along-side standard deep learning libraries \textbf{sklearn, NumPy, Tensorflow}
-        \item Achieved 97\%-91\% training-testing accuracy with a tuned network with only 3 hidden layers
-    \end{rSubsection}
-
-    \begin{rSubsection}{Google Speech Command Dataset Classification}{}{\href{https://colab.research.google.com/drive/1KCJjwgW6VDlANLmXYTotatk2xux3nw0N?usp=sharing}{Project link}}{}
-        \item Classify Google Speech Command using Convolutional Neural Network on audio data (CNN)
-        \item Pipeline processing audio data to image features with data augmentation
-        \item Used multiple CNN architectures (LeNet, MiniGoogleNet, AlexNet) for training and stacking model for ensemble.
-        \item Achieved 91\% validation accuracy with stacking model for ensemble.
-    \end{rSubsection}
-
-    \begin{rSubsection}{Sentiment Analysis on MyAnimeList User Ratings}{}{\href{https://github.com/n0k0m3/rnn-mal-sentiment}{Repo link}, \href{https://colab.research.google.com/github/n0k0m3/rnn-mal-sentiment/blob/main/main.ipynb}{Project link}}{}
-        \item Predict user rating based on review using Recurrent Neural Network (RNN)
-        \item Setup a data-mining pipeline utilizing self-hosted REST API with a \textbf{Redis} server for caching inside \textbf{dockerized} container
-        \item Used different models (RNN with LSTM, CNN, CNN with Word2Vec embedding layers) for training and stacking model for ensemble.
-        \item Achieved 94\% validation accuracy with ensemble model
-    \end{rSubsection}
-
-    \begin{rSubsection}{Movie Ratings Analysis}{}{}{}
-        \item Initiate a Jupyter-Python notebook environment using \textbf{Amazon AWS EC Instance}
-        \item Pre-processed/cleaned movie rating data extracted from IMDB.
-        \item Import data to \textbf{SQL} database hosted on \textbf{Amazon AWS RDS} and ran queries to analyze user trends.
-    \end{rSubsection}
-
-    \begin{rSubsection}{Date A Live: Spirit Pledge Assets Decryption tool}{}{Personal Project. \href{https://github.com/n0k0m3/DALSP-Assets-Decryption-tool}{Repo link}}{}
-        \item Reverse Engineer mobile game Date A Live: Spirit Pledge using Static analysis tool from NSA \textbf{ghidra} and dynamic analysis tool \textbf{frida}.
-        \item Re-implement decryption functions using Python, implement methods to convert PowerVR, Ericsson Texture Compression format to digital images format (JPEG/PNG)
-        \item Data-mined to find insecure API/server that allows easy download/extraction of new game contents.
-    \end{rSubsection}
-    \begin{rSubsection}{Other Minor Projects}{}{Personal Project. \href{https://github.com/n0k0m3}{GitHub link}}{}
-        \item Reverse engineer mobile game Arknights to find AES256 key for assets decryption. \href{https://github.com/n0k0m3/Arknights-Lua-Decrypter}{Repo link}
-        \item Maintained a toolkit that patches (cheats) mobile game Azur Lane. Added both 32/64-bit capability to the tool, features that allows user to obtain ingame paywalled contents for free while avoid cheating detection. \href{https://github.com/n0k0m3/Azur-Lane-Scripts-Autopatcher}{Repo link}
-        \item Date A Live: Spirit Pledge Datamining repository using developed decryption tool. Using \textbf{cronjob} and \textbf{Github Action CI/CD} to automate fetch, decrypt and datamine new contents. \href{https://github.com/n0k0m3/DateALiveData}{Repo link}
-    \end{rSubsection}
-
-\end{rSection}
+\input{4-Projects}
 
 %----------------------------------------------------------------------------------------
+%	SKILLS/ACHIEVEMENTS SECTION
 %----------------------------------------------------------------------------------------
 
+\input{5-Skills}
 
+\begin{DS}
+    \input{6-Academic Honors}
 
-\begin{rSection}{Skills}
-
-    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{5ex}} l }
-        %Teaching \\ 
-        Software \& Tools & Python, Spark/PySpark, MySQL, Redis, Tensorflow, PyTorch, ONNX        \\
-        Operating Systems & Windows, Linux, UNIX-based (MacOS)                                    \\
-        Skills            & Data Processing \& Analysis, Stochastic Modeling, Reverse Engineering \\
-        Languages         & Vietnamese (Native), English (Fluent), Japanese (Basic)
-    \end{tabular}
-\end{rSection}
-
-\begin{rSection}{Academic Honors}
-    \begin{rSubsection}{}{}{}{}
-        \item Dean's List for Spring 2016, Fall 2017, Spring 2018 (GPA $\geq$ 3.7)
-        \item Member of \textbf{Phi Kappa Phi} Honor Society (top 10\% percent of graduate students on campus)
-    \end{rSubsection}
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-% Extra Curricular
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Personal Traits}
-    \begin{rSubsection}{}{}{}{}
-        \item Enjoys adopting cutting edge technologies, especially in Deep Learning and Automation.
-        \item Passionate and innovative researcher.
-        \item Highly motivated, fast learner with exceptional multi-tasking skills.
-        \item Love clearing up jargons with easy-to-understand concepts.
-    \end{rSubsection}
-\end{rSection}
-
-
+    \input{7-Personal Traits}
+\end{DS}
 
 \end{document}
