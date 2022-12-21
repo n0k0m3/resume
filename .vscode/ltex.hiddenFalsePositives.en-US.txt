@@ -1,0 +1,1 @@
+{"rule":"DT_JJ_NO_NOUN","sentence":"^\\QMVP for a clinical notes annotation tool for internal team.\\E$"}
