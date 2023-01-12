@@ -1,3 +1,9 @@
 {
-  "conventionalCommits.scopes": ["linting", "main"]
+  "conventionalCommits.scopes": [
+    "linting",
+    "main",
+    "education",
+    "experience",
+    "projects"
+  ]
 }
