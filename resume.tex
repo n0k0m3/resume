@@ -1,66 +1,3 @@
-% %!TEX TS-program = xelatex
-% %!TEX encoding = UTF-8 Unicode
-% % Awesome CV LaTeX Template
-% %
-% % This template has been downloaded from:
-% % https://github.com/posquit0/Awesome-CV
-% %
-% % Author:
-% % Claud D. Park <posquit0.bj@gmail.com>
-% % http://www.posquit0.com
-% %
-% % Template license:
-% % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-% %
-
-
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %     Configuration
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%% Themes: Awesome-CV
-% \documentclass[]{awesome-cv}
-% \usepackage{textcomp}
-% %%% Override a directory location for fonts(default: 'fonts/')
-% \fontdir[fonts/]
-
-% % %%% Version config
-% % \usepackage{versions}
-% % \includeversion{SWE}
-% % % \excludeversion{SWE}
-% % \includeversion{DS}
-% % % \excludeversion{DS}
-
-% %%% Configure a directory location for sections
-% \newcommand*{\sectiondir}{resume/}
-
-% %%% Override color
-% % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-% %                 awesome-nephritis, awesome-concrete, awesome-darknight
-% %% Color for highlight
-% % Define your custom color if you don't like awesome colors
-% \colorlet{awesome}{awesome-red}
-% %\definecolor{awesome}{HTML}{CA63A8}
-% %% Colors for text
-% %\definecolor{darktext}{HTML}{414141}
-% %\definecolor{text}{HTML}{414141}
-% %\definecolor{graytext}{HTML}{414141}
-% %\definecolor{lighttext}{HTML}{414141}
-
-% %%% Override a separator for social informations in header(default: ' | ')
-% %\headersocialsep[\quad\textbar\quad]
-% \begin{document}
-
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %     Profile
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{center}
-% 	\headerfirstnamestyle{Van Minh} \headerlastnamestyle{Nguyen} \\
-% 	\vspace{2mm}
-% 	{\faEnvelope\ vmnguyen251@gmail.com} | {\faMobile\ (321)-368-9310} | {\faMapMarker\ Melbourne, FL USA} \\
-% 	{{\faLink\ \href{https://n0k0m3.github.io/}{Portfolio} | \faLink\ \href{https://www.linkedin.com/in/minhnguyen251/}{LinkedIn Profile}}}
-% \end{center}
-
-
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 % Awesome CV LaTeX Template for CV/Resume
@@ -81,10 +18,10 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, letterpaper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=0.5in, top=.8cm, right=0.5in, bottom=.8cm, footskip=.5cm}
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
@@ -138,6 +75,11 @@
 
 % \quote{``Be the change that you want to see in the world."}
 
+%-------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%-------------------------------------------------------------------------------
+% \addbibresource{biblatex-examples.bib}
+\addbibresource{resume/bib/published.bib}
 
 %-------------------------------------------------------------------------------
 \begin{document}
@@ -161,6 +103,7 @@
 \input{resume/education.tex}
 \input{resume/experience.tex}
 \input{resume/skills.tex}
+% \input{resume/publication.tex}
 \input{resume/projects.tex}
 % \input{resume/awards.tex}
 % \input{resume/personal_traits.tex}
