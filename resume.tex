@@ -39,7 +39,7 @@
 % \definecolor{sectiondivider}{HTML}{5D5D5D}
 
 % Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{true}
+\setbool{acvSectionColorHighlight}{false}
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
@@ -76,6 +76,11 @@
 % \quote{``Be the change that you want to see in the world."}
 
 %-------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%-------------------------------------------------------------------------------
+\addbibresource{resume/references.bib}
+
+%-------------------------------------------------------------------------------
 \begin{document}
 
 % Print the header with above personal information
@@ -99,8 +104,7 @@
 \input{resume/research.tex}
 \input{resume/projects.tex}
 \input{resume/skills.tex}
-% \input{resume/awards.tex}
-% \input{resume/personal_traits.tex}
+\input{resume/publication.tex}
 
 %-------------------------------------------------------------------------------
 \end{document}
