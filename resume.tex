@@ -23,23 +23,8 @@
 % Configure page margins with geometry
 \geometry{left=0.5in, top=.5in, right=0.5in, bottom=.5in}
 
-% Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
-% \colorlet{awesome}{awesome-red}
-% Uncomment if you would like to specify your own color
-\definecolor{awesome}{HTML}{3E6D9C}
-
-% Colors for text
-% Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
-% \definecolor{sectiondivider}{HTML}{5D5D5D}
-
-% Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{false}
+% Color definitions
+\input{color.tex}
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
@@ -49,31 +34,8 @@
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
-\name{Van Minh}{Nguyen}
-% \position{Ph.D. Candidate{\enskip\cdotp\enskip}MLOps Enthusiast}
-\address{Melbourne, FL USA}
+\input{resume/personal_information.tex}
 
-% \mobile{(+1) 321-368-9310}
-\email{vmnguyen251@gmail.com}
-%\dateofbirth{January 1st, 1970}
-\homepage{https://n0k0m3.github.io/}
-\github{n0k0m3}
-\linkedin{minhnguyen251}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{madium-id}
-% \kaggle{kaggle-id}
-% \googlescholar{googlescholar-id}{name-to-display}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra information}
-
-% \quote{``Be the change that you want to see in the world."}
 
 %-------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
@@ -99,12 +61,13 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 % \input{resume/career_objective.tex}
-\input{resume/education.tex}
 \input{resume/experience.tex}
-\input{resume/research.tex}
-\input{resume/projects.tex}
+\input{resume/education.tex}
 \input{resume/skills.tex}
+% \newpage
+\input{resume/research.tex}
 \input{resume/publication.tex}
+% \input{resume/projects.tex}
 
 %-------------------------------------------------------------------------------
 \end{document}
