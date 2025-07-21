@@ -1,0 +1,147 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, letterpaper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% \colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[circle,noedge,left]{./examples/profile}
+\name{Van Minh}{Nguyen}
+% \position{Site Reliability Engineer{\enskip\cdotp\enskip}Software Architect}
+\address{Melbourne, FL, USA}
+
+% \mobile{(+1) 321-368-9310}
+\email{vmnguyen251@gmail.com}
+%\dateofbirth{January 1st, 1970}
+\homepage{n0k0m3.github.io}
+\github{n0k0m3}
+\linkedin{minhnguyen251}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {UF Information Technology Hiring Team}
+  {University of Florida\\Gainesville, FL 32611}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for AI Support Engineer}
+% How the letter is opened
+\letteropening{Dear UFIT Hiring Team,}
+% How the letter is closed
+\letterclosing{Best regards,}
+% Any enclosures with the letter
+% \letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Van Minh Nguyen~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+  I am thrilled to apply for the AI Support Engineer position within UF Information Technology's Research Computing unit. As a Ph.D. candidate in Operations Research at Florida Tech with a strong background in AI/ML research and development, I am confident I have the skills and experience to make a significant impact in this role.
+
+  What attracts me most to this opportunity is the chance to support UF's innovative researchers across diverse domains by developing efficient workflows and solutions on the powerful HiPerGator supercomputer. I am excited by the prospect of collaborating with the UFIT team to design new features and services that meet researchers' evolving needs.
+  Some key strengths I would bring to this role include:
+
+  \begin{itemize}
+    \item   Extensive experience with Linux distributions (CentOS, Ubuntu), Python programming, and AI/ML frameworks
+    \item   Hands-on knowledge of SLURM scheduling, having utilized FIT's SLURM HPC cluster extensively for research
+    \item   Proven ability to thrive in fast-paced, collaborative environments and effectively communicate technical concepts to diverse audiences, as demonstrated during my Truveta internships
+    \item   Strong problem-solving and workflow optimization skills, exemplified by my work on scalable NER pipelines that led to \$2M in annual cloud cost savings at Truveta
+  \end{itemize}
+  
+  
+  I am particularly eager to apply my background in advanced AI research - spanning satellite 3D reconstruction, suicide prevention, and deep reinforcement learning - to support UF's groundbreaking projects. The opportunity to work with world-class faculty, students, and collaborators to solve real-world challenges is incredibly energizing.
+
+  I believe my technical skills, passion for AI innovation, and drive to support research excellence make me a strong fit for this role. I would welcome the chance to further discuss how I could contribute to UFIT's mission of empowering UF's research community.
+
+  Thank you for considering my application. I look forward to the possibility of joining the UFIT team and advancing UF's remarkable research and education efforts.
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}
